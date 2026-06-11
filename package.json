@@ -1,0 +1,16 @@
+{
+  "name": "garments-pos-erp",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace @garments/api",
+    "dev:web": "npm run dev --workspace @garments/web",
+    "dev:desktop": "npm run dev --workspace @garments/desktop",
+    "build": "npm run build --workspace @garments/web && npm run build --workspace @garments/desktop",
+    "start:api": "npm run start --workspace @garments/api"
+  }
+}
+
